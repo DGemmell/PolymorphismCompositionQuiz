@@ -1,0 +1,22 @@
+Polymorphism
+1. What does the word 'polymorphism' mean?
+    - Poly refers to the Greek word which can mean “many” or “a lot of”.  Morph means “changeable” or that something can be in “many forms”.  When polymorphism is used in Java this suggests that the behaviour changes depending in the context of the situation. 
+2. What does it mean when we apply polymorphism to OO design? Give a simple Java example.
+    - Polymorphism can be implemented in java with both abstract classes and interfaces.  An array list can be created which can have different items added to it for example ( from notes) desktop and printer can be added to the Network class in an array list named devices and interface IConnect. 
+3. What can we use to implement polymorphism in Java?
+    - Polymorphism can be implemented in java with both abstract classes and interfaces.  
+4. How many 'forms' can an object take when using polymorphism?
+    - With Polymorphism anything that accepts the interface will also accept the class.  For example (from our notes) the Desktop class can be both Desktop and IConnect and anything connecting with IConnect can also connect with desktop.  However when connected to desktop this rule will not apply for IConnect.  Only access to Desktop will be available.
+5. Give an example of when you could use polymorphism.
+    - We can use polymorphisms in situations where we have method overload.  If we would need to change one method in one class then have the burden of updating lots of classes.  This can be aided by using polymorphism. 
+
+Composition
+6. What do we mean by 'composition' in reference to object-oriented programming?
+    - Composition is used when we refer to something being “composed” of something. For example, in  inheritance would refer to “A car IS a vehicle” while composition would refer to “A car HAS an engine; a wheel and a dashboard” In object orientated programming we would suggest that an object is made up of many different other objects. 
+7. When would you use composition? Provide a simple example in Java.
+    - Composition allows a class to use behaviour from a group of other classes. It is recommended to use composition over inheritance and compose classes from other classes that will create the behaviours that we will need.
+8. What is/are the advantage(s) of using composition?
+    - Advantages.  With inheritance this can become messy and tracking for changes would be difficult.  If you needed to make a change and check impact on other classes I think this would be an advantage of composition.
+    - Disadvantages.  Im not sure if this is a disadvantage but it does sound risky. the class that is composed of behaviours effectively owns the behaviours.  If this class is deleted then all of these behaviours will also be removed. 
+9. What happens to the behaviours when the object composed of them is destroyed?
+    - In composition, the object composed of other behaviours owns the behaviours. This means that when the object is destroyed then all  of it’s associated behaviours are also destroyed. 
